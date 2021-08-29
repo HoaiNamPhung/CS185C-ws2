@@ -1,0 +1,22 @@
+   80  man tar
+   81  tar -xf amazon_reviews_us_Books_v1_02.tsv.gz
+   82  gunzip amazon_reviews_us_Books_v1_02.tsv.gz
+   83  ls
+   84  vi amazon_reviews_us_Books_v1_02.tsv
+   85  man awk
+   86  awk '$12 ~ /Y/' amazon_reviews_us_Books_v1_02.tsv
+   87  awk '{print $12}' amazon_reviews_us_Books_v1_02.tsv
+   88  awk '$12 ~ /Y/ {print $12}' amazon_reviews_us_Books_v1_02.tsv
+   89  awk -F"\t" '$12 ~ /Y/ {print $12}' amazon_reviews_us_Books_v1_02.tsv > verified.txt
+   90  ls
+   91  vi verified.txt
+   92  awk -F"\t" '$12 ~ /Y/ {print $0}' amazon_reviews_us_Books_v1_02.tsv > verified.txt
+   93  vi verified.txt
+   94  awk -F"\t" '$12 ~ /N/ {print $0}' amazon_reviews_us_Books_v1_02.tsv > unverified.txt
+   95  vi unverified.txt
+   96  vi verified.txt
+   97  wc verified.txt
+   98  wc verified.txt > counts.txt
+   99  wc unverified.txt >>  counts.txt
+  100  vi counts.txt
+  101  history > cmds.log

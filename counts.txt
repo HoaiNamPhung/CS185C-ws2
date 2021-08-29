@@ -1,0 +1,2 @@
+Lines: 229346 | Words: 44402863 | Characters: 262428121 | Filename: verified.txt
+Lines: 2876174 | Words: 505766823 | Characters: 2976274217 | Filename: unverified.txt
